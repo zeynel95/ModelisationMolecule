@@ -1,7 +1,7 @@
 all : essai_lexique
 
 essai_lexique : essai_lexique.o analyse_lexicale.o lecture_caracteres.o
-	gcc -g -Wall -c essai_lexique.o analyse_lexicale.o lecture_caracteres.o
+	gcc -g -Wall -o essai_lexique essai_lexique.o analyse_lexicale.o lecture_caracteres.o
 
 lecture_caracteres.o : lecture_caracteres.c lecture_caracteres.h
 	gcc -g -Wall -c lecture_caracteres.c
