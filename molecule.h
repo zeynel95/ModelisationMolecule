@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef _MOLECULE_H
+#define _MOLECULE_H
 
 typedef enum {H, O, C} typeAtome;
 typedef enum {H20, O2, C02} typeMolecule;
@@ -24,3 +24,8 @@ typedef struct molecule
     atome ensembleAtome[100];
     liaison ensembleLiaison[1000];
 } molecule;
+
+molecule createMolecule(liaison* L, atome* A);
+
+
+#endif

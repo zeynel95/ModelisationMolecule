@@ -262,7 +262,7 @@
 
    // vaut vrai ssi c designe un caractere separateur
    int est_separateur(char c) { 
-      return c == ' ' || c == '\t' || c == '\n' ;
+      return c == ' ' || c == '\t' || c == '\n' || c == '\r' ;
    }
 
    /* --------------------------------------------------------------------- */
